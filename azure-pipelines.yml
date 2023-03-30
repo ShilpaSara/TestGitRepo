@@ -27,7 +27,9 @@ steps:
 - script:
    #python tests --doctest-modules --junitxml=junit/test-results.xml
   # pytest -v -s TestLogin.py
-   python -m pytest tests --junitxml=junit/test-results.xml
+  # python -m pytest tests --junitxml=junit/test-results.xml
+   pytest -s -v  --html=Reports\report.html testCases/test_login.py
+
   displayName: 'Execute tests'
 
 - task: PublishTestResults@2
