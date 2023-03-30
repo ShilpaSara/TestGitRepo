@@ -30,7 +30,6 @@ steps:
    python -m pytest tests --junitxml=junit/test-results.xml
   displayName: 'Execute tests'
 
-Settings:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
