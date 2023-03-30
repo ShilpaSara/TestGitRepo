@@ -30,5 +30,6 @@ steps:
   
 - script:
    #python tests --doctest-modules --junitxml=junit/test-results.xml
-   pytest -v -s TestLogin.py
+  # pytest -v -s TestLogin.py
+   python -m pytest tests --junitxml=junit/test-results.xml
   displayName: 'Execute tests'
